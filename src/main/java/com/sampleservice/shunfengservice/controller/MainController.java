@@ -14,12 +14,12 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 public class MainController extends MObject {
     @ResponseBody
-    @RequestMapping(value = "/pay", method = RequestMethod.POST)
+    @RequestMapping(value = "/delivery", method = RequestMethod.POST)
     @MRestApiType
     @MApiFunction
     public MResponse payFunction(@RequestBody MResponse requestData) {
         MResponse result = new MResponse();
-        result.set("msg", "/pay");
+        result.set("msg", "/delivery");
         return result;
     }
 }
